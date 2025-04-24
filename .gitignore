@@ -1,0 +1,16 @@
+# Ignora cache compilado
+__pycache__/
+*.py[cod]
+
+# Ignora arquivos temporários de editores
+*.swp
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# Ambientes virtuais
+.env/
+venv/
+ENV/
