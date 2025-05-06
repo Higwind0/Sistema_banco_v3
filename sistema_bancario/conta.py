@@ -1,4 +1,5 @@
-from historico import Historico
+from sistema_bancario.historico import Historico
+
 
 class conta:
     def __init__(self, numero, cliente):
@@ -31,14 +32,14 @@ class conta:
     @property
     def historico(self):
         return self._historico
-    
+
     def depositar(self, valor):
         if valor > 0:
             self._saldo += valor
             print(f"Depósito de R$ {valor:.2f} realizado com sucesso.")
         else:
-            raise ValueError("Valor inválido para depósito.")  
-        
+            raise ValueError("Valor inválido para depósito.")
+
         return True
 
     def sacar(self, valor):
@@ -54,5 +55,5 @@ class conta:
             return True
         else:
             raise ValueError("Valor inválido para saque.")
-        
+
         return False

@@ -1,7 +1,16 @@
-from pessoa_fisica import pessoaFisica
-from conta_corrente import ContaCorrente
-from deposito import Deposito
-from saque import Saque
+from sistema_bancario.pessoa_fisica import pessoaFisica
+from sistema_bancario.conta_corrente import ContaCorrente
+from sistema_bancario.deposito import Deposito
+from sistema_bancario.saque import Saque
+
+
+def main():
+    sistema = sysBank()
+    sistema.executar()
+
+
+if __name__ == "__main__":
+    main()
 
 
 class sysBank:

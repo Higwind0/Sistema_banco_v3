@@ -14,3 +14,9 @@ __pycache__/
 .env/
 venv/
 ENV/
+
+# Ignora arquivos de instalação de pacotes
+*.egg
+build/
+dist/
+*.egg-info/

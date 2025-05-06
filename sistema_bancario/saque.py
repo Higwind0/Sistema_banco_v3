@@ -1,4 +1,5 @@
-from transacao import Transacao
+from sistema_bancario.transacao import Transacao
+
 
 class Saque(Transacao):
     def __init__(self, valor):
@@ -7,10 +8,10 @@ class Saque(Transacao):
     @property
     def valor(self):
         return self._valor
-    
+
     def registrar(self, conta):
         sucesso_transacao = conta.sacar(self._valor)
-        
+
         if sucesso_transacao:
             conta.historico.adicionar_transacao(self)
             return True
